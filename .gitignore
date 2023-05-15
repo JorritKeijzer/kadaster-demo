@@ -1,0 +1,3 @@
+# Standard ignore
+node_modules
+.env
