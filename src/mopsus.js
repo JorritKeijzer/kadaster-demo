@@ -18,22 +18,10 @@ const getObjectData = async (zip, housenumber) => {
       postcode: zip,
       housenumber: housenumber,
     });
-    return data;
+    return data?.Output;
   } catch (e) {
-    console.error(e);
+    console.error(e.response.data);
   }
 };
 
-const getEnergyLabel = async (zip, housenumber) => {
-  try {
-    const { data } = await API.post(`energylabel`, {
-      postcode: zip,
-      housenumber: housenumber,
-    });
-    return data;
-  } catch (e) {
-    console.error(e);
-  }
-};
-
-// console.log(await getEnergyLabel('1013LB', 24));
+console.log('------- Mopsus -------', await getObjectData('1013LB', 24));
