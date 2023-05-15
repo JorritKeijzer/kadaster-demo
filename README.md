@@ -16,7 +16,7 @@ DOCS: https://docs.altum.ai/
 
 Mopsus (by altum.ai) is a platform for real estate data. It has an api that provides WOZ info and value, sustainability advice, Kadaster data, and other relevant data the Kadaster api provides.
 
-The API service is quite expensive. Pay per use is 0,47EUR per credit.
+The API service is quite expensive. Pay per use is 0,47EUR per credit. There are other payment plans but all quite expensive.
 
 ## Example request
 
