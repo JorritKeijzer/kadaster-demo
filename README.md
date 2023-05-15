@@ -51,6 +51,6 @@ Data {
 }
 ```
 
-## Enegry label
+## Energy label
 
 The object api doesn't get any data about the energy label.
