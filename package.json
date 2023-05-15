@@ -7,8 +7,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "nodemon ./src/index.js",
-    "start:mopsus": "node mopsus.api.js"
+    "start": "nodemon ./src/index.js"
   },
   "dependencies": {
     "axios": "^1.4.0",
