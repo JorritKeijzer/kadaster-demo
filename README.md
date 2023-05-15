@@ -4,10 +4,10 @@
 
 Candidates as replacement for the Kadaster API.
 
-- Mopsus — Platform for real estate data that provides paid api’s for all our needs regarding Kadaster data, Energy, House Object data, and WOZ
+- Mopsus — Platform for real estate data that provides paid APIs for all our needs regarding Kadaster data, Energy, House Object data, and WOZ
 - EP-online — A database for all energy labels in the NL created by the RVO and free to use that provides an API for energy labels based on address data.
 - Matrixian — Another real estate data platform with an API that has Energy, House Object data, and WOZ
-- Huispedia — Provides a paid api with Kadaster data, Energy, House Object data, and WOZ
+- Huispedia — Provides a paid API with Kadaster data, Energy, House Object data, and WOZ
 
 # Mopsus
 
