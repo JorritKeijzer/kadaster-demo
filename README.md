@@ -14,8 +14,7 @@ This is an example of a request for the Object data API
 
 More info([Object data API - Altum AI](https://docs.altum.ai/apis/object-data-api))
 
-```json
-Data {
+```javascript
   Output: {
     BagID: '0363010000854460',
     PostCode: '1013LB',
@@ -48,7 +47,6 @@ Data {
     Province: 'Noord-Holland',
     Description: null
   }
-}
 ```
 
 ## Energy label
