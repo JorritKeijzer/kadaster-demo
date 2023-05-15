@@ -3,10 +3,15 @@ dotenv.config();
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: `https://public.ep-online.nl/api/v3/`,
+  baseURL: process.env.EPONLINE_BASE_URL,
   headers: { Authorization: process.env.EPONLINE_API_KEY },
 });
 
+/**
+ * Gets energylabel and data based on zipcode
+ * @param {string} zip - Zip code for the adress
+ * @param {string | number} housenumber - Housenumber of the adress
+ */
 const getEnergyLabel = async (zip, housenumber) => {
   try {
     const { data } = await API.get(`PandEnergielabel/Adres`, {
@@ -17,11 +22,11 @@ const getEnergyLabel = async (zip, housenumber) => {
         huisnummertoevoeging: null,
       },
     });
-    console.log(data);
-    return `Energielabel: ${data[0].labelLetter}`;
+
+    return { energylabel: data[0].labelLetter, data };
   } catch (e) {
-    console.error(e);
+    console.error(e.response.data);
   }
 };
 
-console.log(await getEnergyLabel('1013LB', 24));
+console.log('------- EP Online -------', await getEnergyLabel('1013LB', 24));
